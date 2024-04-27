@@ -7,7 +7,7 @@
     /* bg = background = plano de fundo */
     --secondary-bg-color: #28292E;
     --primary-border-color: #28292E;
-    --secundary-border-color: #56575A;
+    --secondary-border-color: #56575A;
 
     --title-color: #F0f0f0;
     --text-color: #9a9a9c;
@@ -293,3 +293,75 @@ p {
 .tecnologia-logo {
     height: 2.4rem;
 }
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projeto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card-cover {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: cover;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.card-title{
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: 400;
+}
+
+.card-descricao {
+    color: var(--text-color);
+}
+.card-lista, .sobre-lista {
+    margin-left: 1.25rem;
+}
+.card-item, .sobre-item {
+    list-style: disc;
+}
+.card-button, .card-descricao {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.card-button .btn {
+    padding: .65rem 1.25rem;
+}
+.card-button .btn span {
+    font-size: 1rem;
+}
+.card-body .tecnologias-lista {
+    gap: .75rem;
+}
+.card-body .tecnologia-item {
+    width: 4rem;
+    height: 4rem;
+}
+.card-body .tecnologia-logo {
+    height: 2rem;
+}
+.projetos .btn {
+    width: auto;
+    margin: auto;
+}
+
